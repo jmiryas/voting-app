@@ -48,6 +48,50 @@
             </a>
         </div>
     </header>
+
+    <main class="container mx-auto max-w-custom flex">
+        <div class="w-70 mr-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo voluptates
+            reiciendis
+            velit saepe
+            provident esse vitae recusandae delectus sed rerum iusto necessitatibus perspiciatis pariatur nihil
+            accusantium veritatis, magnam cumque.</div>
+
+        <div class="w-175">
+            <nav class="flex items-center justify-between text-xs">
+                <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
+                    <li>
+                        <a href="#" class="border-b-4 pb-3 border-blue">Semua Ide (87)</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Berproses
+                            (1)
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
+                    <li>
+                        <a href="#"
+                            class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Dijalankan
+                            (10)</a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Ditutup
+                            (55)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mt-8">
+                {{ $slot }}
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
