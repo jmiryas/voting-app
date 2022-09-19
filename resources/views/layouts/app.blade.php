@@ -50,11 +50,65 @@
     </header>
 
     <main class="container mx-auto max-w-custom flex">
-        <div class="w-70 mr-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo voluptates
-            reiciendis
-            velit saepe
-            provident esse vitae recusandae delectus sed rerum iusto necessitatibus perspiciatis pariatur nihil
-            accusantium veritatis, magnam cumque.</div>
+        <div class="w-70 mr-5">
+            <div class="bg-white border-2 border-blue rounded-xl mt-16" style="border-image-source: linear-gradient(to bottom, rgba(50, 138, 241, 0.22), rgba(99, 123, 255, 0));
+            border-image-slice: 1;
+            background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(to bottom, rgba(50, 138, 241, 0.22), rgba(99, 123, 255, 0));
+            background-origin: border-box;
+            background-clip: content-box, border-box;">
+                <div class="text-center px-6 py-2 pt-6">
+                    <h3 class="font-semibold text-base">Tambahkan Ide</h3>
+                    <p class="text-xs mt-4">
+                        Tambahkan ide menarikmu!
+                    </p>
+                </div>
+
+                <form action="#" method="POST" class="space-y-4 px-4 py-6">
+                    <div>
+                        <input type="text"
+                            class="w-full text-sm bg-gray-100 border-none rounded-xl placeholder-gray-900 px-4 py-2"
+                            placeholder="Judul idemu ..." />
+                    </div>
+
+                    <div>
+                        <select name="category_add" id="category_add"
+                            class="w-full bg-gray-100 text-sm rounded-xl border-none px-4 py-2">
+                            <option value="Category One">Kategori Satu</option>
+                            <option value="Kategori Satu">Kategori Satu</option>
+                            <option value="Kategori Satu">Kategori Satu</option>
+                            <option value="Kategori Satu">Kategori Satu</option>
+                            <option value="Kategori Satu">Kategori Satu</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <textarea name="idea" id="idea" cols="30" rows="4"
+                            class="w-full bg-gray-100 text-sm rounded-xl border-none px-4 py-2 placeholder-gray-900"
+                            placeholder="Deskripsikan idemu ..."></textarea>
+                    </div>
+
+                    <div class="flex items-center justify-between space-x-3">
+                        <button type="button"
+                            class="flex items-center w-1/2 h-11 text-xs bg-gray-200 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 ease-in px-6 py-3">
+                            <svg class="w-6 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+
+                            Attach
+                        </button>
+
+                        <button type="submit"
+                            class="text-white w-1/2 h-11 text-xs bg-blue font-semibold rounded-xl border border-blue hover:bg-blue-hover transition duration-150 ease-in px-6 py-3">
+
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div class="w-175">
             <nav class="flex items-center justify-between text-xs">
